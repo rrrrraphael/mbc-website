@@ -38,8 +38,8 @@
             <div class="mySlides fade">
             <img src="../img/index/slideshow/slider_2_1000px.jpg" style="width:100%;">
             <div class="text">
-                <p class="sliderLine1">Komm vorbei und informiere dich!</p>
-                <p class="sliderLine2">MBC Erlauftal, wo das Fliegen wirklich erlebt wird</p>
+                <!-- <p class="sliderLine1">Komm vorbei und informiere dich!</p>
+                <p class="sliderLine2">MBC Erlauftal, wo das Fliegen wirklich erlebt wird</p> -->
             </div>
             </div>
         
@@ -65,39 +65,40 @@
         </div> 
 
         <div class="content1">
-            <!-- <div>
-                <h1>Träumst du nachts auch vom Fliegen?</h1>
-                <p>Oder von viel Spass und Entspannung in der Freizeit? 
-                Der MBC bringt dich auf andere Gedanken und du entdeckst das Kind wieder in dir. 
-                Lass es raus!</p>
-                
-                <br>
-                <button href="webcam">Schau's dir an</button>
-            </div> -->
             <div>
-                <img src="../img/icons/flight_takeoff_FILL0_wght400_GRAD0_opsz48.png" alt="taekoff">
-                <h2>Entspannung</h2>
-                <p> Relax und lasse dir die Sonne ins Gesicht scheinen, geniesse den Tag! 
-                Er gehört nur dir!</p>
+                <div class="divCaption">
+                    <img src="../img/icons/flight_takeoff_FILL0_wght400_GRAD0_opsz48.png" alt="taekoff">
+                    <h2>Entspannung</h2>
+                    <p> Relax und lasse dir die Sonne ins Gesicht scheinen, genieße den Tag! 
+                    Er gehört nur dir!</p>
+                </div>
                 
-                <img src="../img/icons/public_FILL0_wght400_GRAD0_opsz48.png" alt="planet">
-                <h2>Atmosphäre</h2>
-                <p>Hier haben alle das selbe Ziel, fliegen und mit den Modellen spielen. 
-                Das hat seine eigene Atmosphäre.</p>
+                <div class="divCaption">
+                    <img src="../img/icons/public_FILL0_wght400_GRAD0_opsz48.png" alt="planet">
+                    <h2>Atmosphäre</h2>
+                    <p>Hier haben alle das selbe Ziel, fliegen und mit den Modellen spielen. 
+                    Das hat seine eigene Atmosphäre.</p>
+                </div>
+
             </div>
 
             <div>
-                <img src="../img/icons/group_FILL0_wght400_GRAD0_opsz48.png" alt="group">
-                <h2>Gleichgesinnte</h2>
-                <p>Es geht immer nur um das "eine" Thema. 
-                Um das sich alles hier dreht. Flugmodelle!</p>
+                <div class="divCaption">
+                    <img src="../img/icons/group_FILL0_wght400_GRAD0_opsz48.png" alt="group">
+                    <h2>Gleichgesinnte</h2>
+                    <p>Es geht immer nur um das "eine" Thema. 
+                    Um das sich alles hier dreht. Flugmodelle!</p>
+                </div>
 
 
-                <img src="../img/icons/sunny_FILL0_wght400_GRAD0_opsz48.png" alt="sunny">
-                <h2>Freizeit</h2>
-                <p>Die Sonne im Rücken, den Wind gegen die Nase, 
-                super gelegen in Ost-West Ausrichtung.</p>
-                
+                <div class="divCaption">
+                    <img src="../img/icons/sunny_FILL0_wght400_GRAD0_opsz48.png" alt="sunny">
+                    <h2>Freizeit</h2>
+                    <p>Die Sonne im Rücken, den Wind gegen die Nase, 
+                    super gelegen in Ost-West Ausrichtung.</p>
+                    
+
+                </div>
 
             </div>
         </div>
@@ -110,8 +111,13 @@
                 und eine hohe Anforderung an das eigene Koordinationsvermögen <br> Schau's dir an!</p>
         
                 <div class="imgRow">
-                    <div class="imgDiv"><img src="../img/index/piste.jpg" alt="piste">200m Startbahn</div>
-                    <div class="imgDiv"><img src="../img/index/photovolthaik.jpg" alt="photovolthaik">Laden mit PV-Strom</div>
+                    <div class="imgDiv"><img src="../img/index/piste.jpg" alt="piste" id="imgPiste">200m Startbahn</div>
+                    <div id="myModal" class="modal">
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+                    
+                    <div class="imgDiv""><img src="../img/index/photovolthaik.jpg" alt="photovolthaik">Laden mit PV-Strom</div>
                     <div class="imgDiv"><img src="../img/index/tisch.jpg" alt="tisch">Große Tische</div>
                 </div>
         </div>
