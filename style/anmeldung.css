@@ -1,0 +1,80 @@
+.imgDivTop{
+    width:100%;
+    margin:0;
+    padding:0;
+}
+.imgDivTop img{
+    width:100%;
+}
+
+.content1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left:10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    margin-bottom: 2%;
+    border-top: #014a7f 2px solid;
+}
+.content1 h2{
+    font-weight: normal;
+}
+.content1 p{
+    line-height: 150%;
+    font-size: large;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.content2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left:10%;
+    margin-right: 10%;
+    padding-top: 2%;
+    margin-bottom: 2%;
+    border-top: #9a1813 2px solid;
+}
+
+.content2 p{
+    line-height: 150%;
+    font-size: large;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.content3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left:10%;
+    margin-right: 10%;
+    border-top: #014a7f 2px solid;
+}
+.content3 button{
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    margin:5%;
+    font-size: x-large;
+    padding:1%;
+}
+.content3 button:hover{
+    opacity: 0.85;
+}
+
+.content4{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 2%;
+}
+.content4 p{
+    line-height: 150%;
+}

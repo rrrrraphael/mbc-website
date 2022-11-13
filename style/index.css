@@ -315,6 +315,12 @@
     border-top: #9a1813 2px solid;
 }
 
+@media only screen and (max-width: 768px) {
+    .content3{
+        flex-direction: column;
+    }
+}
+
 .content3 h2{
     font-weight: normal;
     font-style: italic;
@@ -398,6 +404,14 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+@media only screen and (max-width: 768px) {
+    .chart{
+        flex-direction: column;
+    }
+}
+
+
 .sheet{
     display: flex;
     flex-direction: column;
