@@ -25,3 +25,47 @@
 .content1 p{
     line-height: 150%;
 }
+
+.content2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 10%;
+    margin-right:10%;
+    margin-bottom: 5%;
+    margin-top:1%;
+}
+
+.content2 h2{
+    border-bottom: #9a1813 2px solid;
+    padding-bottom: 1%;
+}
+
+.content2 h2:hover{
+    border-bottom: #014a7f 2px solid;
+
+}
+
+.content2 h3{
+    font-weight: 500;
+    padding-top:2%;
+}
+
+.content2 h3:hover{
+    border-bottom: #014a7f 2px solid;
+    padding-bottom: 1%;;
+}
+
+.content2 .chart{
+    display: flex;
+    flex-direction: column;
+}
+
+.content2 table{
+    width: 100%;
+
+}
+
+.content2 td{
+    width:50%;
+}
