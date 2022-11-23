@@ -101,37 +101,7 @@
 
 } 
 
-.news{
-    margin-left: 10%;
-    margin-right: 10%;
-    border-top:#9a1813 2px solid;
-    margin-top:1%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.news h1{
-    margin-left: auto;
-    margin-right:auto;
-    font-weight:300;
-}
 
-.news p{
-    font-size: large;
-}
-
-.newsHeader{
-    display: flex;
-    justify-content: space-between;
-}
-
-.newsHeader img{
-    width: 100%;
-    height: 100%;
-    margin-top:auto;
-    margin-bottom: auto;
-    margin-right: 10%;
-}
 
 .content1{
     display: flex;
@@ -347,6 +317,19 @@
     align-items: center;
     padding-left:10%;
     padding-right: 10%;
+}
+.content4 button{
+    margin-top: 1%;
+    border:none;
+    border-radius: 5px;
+    font-size: larger;
+    padding: 2%;
+    background-color: #9a1813;
+    color: white;
+}
+
+.content4 button:hover{
+    background-color: #014a7f;
 }
 
 .webcam{

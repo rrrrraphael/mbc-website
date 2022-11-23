@@ -9,3 +9,35 @@
     border-bottom: #014a7f 2px solid;
 
 }
+
+p{
+    line-height: 150%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+.content1{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+    padding-bottom: 1%;
+    border-bottom: #9a1813 2px solid;
+}
+
+.content2{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+    padding-bottom: 1%;
+    border-bottom: #014a7f 2px solid;
+}
+
+.content3{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
