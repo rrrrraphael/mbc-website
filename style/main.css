@@ -199,3 +199,6 @@ footer address{
     font-style: italic;
 }
 
+.imgDivTop img{
+    filter: opacity(90%);
+}
