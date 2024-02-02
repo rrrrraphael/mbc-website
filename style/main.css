@@ -163,6 +163,15 @@ button{
 
 
 /* footer */
+
+@media screen and (max-width: 768px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
 footer{
     background-color: #cccccc;
     display: flex;

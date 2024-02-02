@@ -81,13 +81,15 @@
 }
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
     .content1{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    margin:auto;
+    margin: auto;
     }
+
     .content2{
     display: flex;
     flex-direction: column;
@@ -96,6 +98,7 @@
     .imgRow{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     }
 
@@ -133,6 +136,7 @@
     margin: 1%;
     padding: 1%;
 }
+
 
 
 
