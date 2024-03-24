@@ -137,7 +137,9 @@
     padding: 1%;
 }
 
-
+.content1 h2{
+    font-weight: 600;
+}
 
 
 .content2{
@@ -178,18 +180,19 @@
     background-color: #9a1813;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
-  }
-  
-  .content2 h1:hover:after {
+}
+
+    .content2 h1:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
-  }
+}
 
 .content2 p{
     text-align: center;
     line-height: 150%;
     font-size: large;
 }
+
 
 .imgRow{
     display: flex;
@@ -214,9 +217,7 @@
     padding-bottom: 4%;
 }
 
-.imgDiv img:hover{
-    opacity: 0.7;
-}
+
 
 .modal {
     display: none; /* Hidden by default */

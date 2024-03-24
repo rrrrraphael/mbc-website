@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>template</title>
+        <link rel="stylesheet" href="../style/main.css">
+        <link rel="stylesheet" href="../style/gallery_page.css">
+        <link rel="icon" type="image/x-icon" href="../img/logoMBC.png">
+
+    </head>
+    <body id="body">
+
+        <div class="topnav" id="myTopnav">
+            <img src="../img/logoMBC.png" alt="logoMBC" class="logo">
+            <a href="index.html" class="hover-underline-animation">Home</a>
+            <a href="anmeldung.html" class="hover-underline-animation">Anmeldung</a>
+            <div class="dropdown">
+                <button class="dropbtn hover-underline-animation" onclick="window.location.href='about.html'">Über uns 
+                </button>
+                <div class="dropdown-content">
+                    <a href="flugzeiten.html">Flugzeiten</a>
+                    <a href="webcam.html">Webcam</a>
+                    <a href="flugplatzordnung.html">Flugplatzordnung</a>
+                    <a href="betrieb.html">Betrieb</a>
+                    <a href="laermessung.html">Lärmmessung</a>
+                </div>
+            </div> 
+            <a href="neuigkeiten.html" class="hover-underline-animation">Neuigkeiten</a>
+            <a href="gallerie.html" class="hover-underline-animation">Gallerie</a>
+            <a href="kontakt.html" class="hover-underline-animation">Kontakt</a>
+
+            <a href="javascript:void(0);" class="icon" onclick="responsiveTopnav()">&#9776;</a>
+        </div>
+
+        <div class="content1">
+            <!-- Titel der Gallerie -->
+            <h1>RBC-Kits He-162</h1>
+            <!-- kurze Beschreibung -->
+            <p>Die Heinkel 162 Salamander wurde von Raphael Völker aus einem Bausatz des Herstellers RBC-Kits erbaut.  Angetrieben wird das Modell von einem 90 mm Jetfan Impeller an einem 6s LiPo. Der Salamander hat eine Spannweite von 1100 mm und ist 1500 mm lang. Gestartet wird das Modell mit einer Flitsche. </p>
+            <p>Das Original ist auch als 'Volksjäger' bekannt und war ein deutsches Jagdflugzeug, das im Zuge des Jägernotprogramms im Zweiten Weltkrieg entwickelt wurde.
+                Obwohl technisch fortschrittlich, kam die He 162 im Krieg zu spät, um das Kräfteverhältnis wesentlich zu beeinflussen. 
+                Es wurde nur eine begrenzte Anzahl eingesetzt, bevor die Feindseligkeiten endeten.</p>
+        </div>
+
+        <div class="content2">
+            <div class="imgRow">
+                <div class="imgDiv box"><img src="../../image_gallery/He-162/IMG_7822.jpg" id="img1" onclick="toggleImg('img1')"/></div>
+                <div class="imgDiv box"><img src="../../image_gallery/He-162/IMG_7823.jpg" id="img2" onclick="toggleImg('img2')"/></div>
+                <div class="imgDiv box"><img src="../../image_gallery/He-162/IMG_7831.jpg" id="img3" onclick="toggleImg('img3')"/></div>
+                <div class="imgDiv box"><img src="../../image_gallery/He-162/IMG_7820.jpg" id="img4" onclick="toggleImg('img4')"/></div>
+            </div>
+            <div class="imgRow">
+                <div class="imgDiv box"><img src="../../image_gallery/He-162/IMG_7822.jpg" id="img1" onclick="toggleImg('img1')"/></div>
+                <div class="imgDiv box"><img src="../../image_gallery/He-162/IMG_7823.jpg" id="img2" onclick="toggleImg('img2')"/></div>
+                <div class="imgDiv box"><img src="../../image_gallery/He-162/IMG_7831.jpg" id="img3" onclick="toggleImg('img3')"/></div>
+                <div class="imgDiv box"><img src="../../image_gallery/He-162/IMG_7820.jpg" id="img4" onclick="toggleImg('img4')"/></div>
+            </div>
+            <div class="imgRow">
+                <div class="imgDiv box"><img src="../../image_gallery/He-162/IMG_7822.jpg" id="img1" onclick="toggleImg('img1')"/></div>
+                <div class="imgDiv box"><img src="../../image_gallery/He-162/IMG_7823.jpg" id="img2" onclick="toggleImg('img2')"/></div>
+                <div class="imgDiv box"><img src="../../image_gallery/He-162/IMG_7831.jpg" id="img3" onclick="toggleImg('img3')"/></div>
+                <div class="imgDiv box"><img src="../../image_gallery/He-162/IMG_7820.jpg" id="img4" onclick="toggleImg('img4')"/></div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        
+
+        <footer>
+            <p class="footerHeader">Infos</p>
+            <address>Addresse : Modellbauclub Erlauftal, Moos 4, 3250 Wieselburg. </address>
+            <p class="footerContact">Obmann Telefon: +43 664 3359101 <br> Email: office@mbc-erlauftal.at <br> ZVR: 382620803</p>
+
+            <p class="footerBottom">Der MBC ist auch Betreiber der Website www.mbc-erlauftal.at</p>  
+
+        </footer>
+
+
+        <script src="../script/main.js">
+
+        </script>
+    </body>
+
+    <script>
+        function enlargeImg(imageId) {
+            // Set image size to 1.5 times original
+            img = document.getElementById(imageId);
+            img.style.transform = "scale(2.5)";
+            // Animation effect
+            img.style.transition = "transform 0.25s ease";
+        }
+        function resetImg(imageId) {
+            // Set image size to original
+            img = document.getElementById(imageId);
+            img.style.transform = "scale(1)";
+            img.style.transition = "transform 0.25s ease";
+        }
+
+        clicked = false;
+        lastImg = "";
+        function toggleImg(imageId){
+            if(imageId != lastImg && lastImg != ""){
+                resetImg(lastImg);
+            }
+            if(clicked == false){
+                enlargeImg(imageId);
+                clicked = true;
+                lastImg = imageId;
+            }
+            else{
+                resetImg(imageId);
+                clicked = false;
+                lastImg = "";
+            }
+        }
+        
+    </script>
+</html>

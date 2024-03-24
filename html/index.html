@@ -39,7 +39,7 @@
         <div class="slideshow-container">
 
             <div class="mySlides fade">
-            <img src="../img/index/slideshow/slider_2_1000px.jpg" style="width:100%;">
+            <img src="../img/index/slideshow/ares_2000.jpg" style="width:100%;">
             <div class="text">
                 <!-- <p class="sliderLine1">Komm vorbei und informiere dich!</p>
                 <p class="sliderLine2">MBC Erlauftal, wo das Fliegen wirklich erlebt wird</p> -->
@@ -47,13 +47,26 @@
             </div>
         
             <div class="mySlides fade">
-            <img src="../img/index/slideshow/slider_1_1000px.jpg" style="width:100%">
+            <img src="../img/index/slideshow/viper_2000.JPG" style="width:100%">
             <div class="text">
                 <!-- <p class="sliderLine1">Flugmodellbau</p>
                 <p class="sliderLine2">Entdecke das Kind in dir!</p> -->
             </div>
             </div>
-        
+            <div class="mySlides fade">
+                <img src="../img/index/slideshow/klemm_2000.JPG" style="width:100%">
+                <div class="text">
+                    <!-- <p class="sliderLine1">Flugmodellbau</p>
+                    <p class="sliderLine2">Entdecke das Kind in dir!</p> -->
+            </div>
+            </div>
+            <div class="mySlides fade">
+                <img src="../img/index/slideshow/heli_2000.JPG" style="width:100%">
+                <div class="text">
+                    <!-- <p class="sliderLine1">Flugmodellbau</p>
+                    <p class="sliderLine2">Entdecke das Kind in dir!</p> -->
+            </div>
+            </div>
             <!-- Next and previous buttons -->
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -64,6 +77,9 @@
         <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+
         </div> 
 
 
@@ -71,14 +87,14 @@
             <div>
                 <div class="divCaption">
                     <img src="../img/icons/flight_takeoff_FILL0_wght400_GRAD0_opsz48.png" alt="taekoff">
-                    <h2>Entspannung</h2>
+                    <h2 style="color:  #014a7f;">Entspannung</h2>
                     <p> Relax und lasse dir die Sonne ins Gesicht scheinen, genieße den Tag! 
                     Er gehört nur dir!</p>
                 </div>
                 
                 <div class="divCaption">
                     <img src="../img/icons/public_FILL0_wght400_GRAD0_opsz48.png" alt="planet">
-                    <h2>Atmosphäre</h2>
+                    <h2 style="color:  #014a7f;">Atmosphäre</h2>
                     <p>Hier haben alle das selbe Ziel, fliegen und mit den Modellen spielen. 
                     Das hat seine eigene Atmosphäre.</p>
                 </div>
@@ -88,7 +104,7 @@
             <div>
                 <div class="divCaption">
                     <img src="../img/icons/group_FILL0_wght400_GRAD0_opsz48.png" alt="group">
-                    <h2>Gleichgesinnte</h2>
+                    <h2 style="color:  #9a1813;">Gleichgesinnte</h2>
                     <p>Es geht immer nur um das "eine" Thema. 
                     Um das sich alles hier dreht. Flugmodelle!</p>
                 </div>
@@ -96,7 +112,7 @@
 
                 <div class="divCaption">
                     <img src="../img/icons/sunny_FILL0_wght400_GRAD0_opsz48.png" alt="sunny">
-                    <h2>Freizeit</h2>
+                    <h2 style="color:  #9a1813;">Freizeit</h2>
                     <p>Die Sonne im Rücken, den Wind gegen die Nase, 
                     super gelegen in Ost-West Ausrichtung.</p>
                     
@@ -114,19 +130,13 @@
                 und eine hohe Anforderung an das eigene Koordinationsvermögen <br> Schau's dir an!</p>
         
                 <div class="imgRow">
-                    <div class="imgDiv"><img src="../img/index/piste.jpg" alt="piste" id="imgPiste">200m Startbahn</div>
-                    <div id="myModal" class="modal">
-                        <img class="modal-content" id="img01">
-                        <div id="caption"></div>
-                    </div>
-                    
-                    <div class="imgDiv""><img src="../img/index/photovolthaik.jpg" alt="photovolthaik">Laden mit PV-Strom</div>
-                    <div class="imgDiv"><img src="../img/index/tisch.jpg" alt="tisch">Große Tische</div>
+                    <div class="imgDiv"><img src="../img/index/piste.jpg" alt="piste" id="imgPiste" onclick="toggleImg('imgPiste')">200m Startbahn</div>
+                    <div class="imgDiv"><img src="../img/index/photovolthaik.jpg" alt="photovolthaik" id="imgPV" onclick="toggleImg('imgPV')">Laden mit PV-Strom</div>
+                    <div class="imgDiv"><img src="../img/index/tisch.jpg" alt="tisch" id="imgTisch" onclick="toggleImg('imgTisch')">Große Tische</div>
                 </div>
         </div>
 
         <div class="content3">
-            <h2>"Längste Start- und Landepiste, auch für große Modelle!"</h2>
             
             <p>Wir bieten auf sechs Vorbereitungstischen, gesamt mit mehr als 12 Meter Tischlänge, in unterschiedlichen Höhen, genug Möglichkeiten dein Modell flugfertig zu machen. Ob Akkus rein, Servo prüfen, Klappen checken oder noch schnell das Fahrwerk testen.
             Auf den Vorbereitungstischen ist genug Platz vorhanden.
@@ -205,4 +215,30 @@ Nur aktive Piloten müssen sich registrieren und benötigeneinen Kompetenznachwe
         <script src="../script/main.js"></script>
         <script src="../script/index.js"></script>
     </body>
+    <script>
+        function enlargeImg(imageId) {
+            // Set image size to 1.5 times original
+            img = document.getElementById(imageId);
+            img.style.transform = "scale(2)";
+            // Animation effect
+            img.style.transition = "transform 0.25s ease";
+        }
+        function resetImg(imageId) {
+            // Set image size to original
+            img = document.getElementById(imageId);
+            img.style.transform = "scale(1)";
+            img.style.transition = "transform 0.25s ease";
+        }
+        clicked = false;
+        function toggleImg(imageId){
+            if(clicked == false){
+                enlargeImg(imageId);
+                clicked = true;
+            }
+            else{
+                resetImg(imageId);
+                clicked = false;
+            }
+        }
+    </script>
 </html>
