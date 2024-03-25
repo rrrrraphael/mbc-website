@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>template</title>
+        <title>Galerie</title>
         <link rel="stylesheet" href="../style/main.css">
         <link rel="stylesheet" href="../style/gallery_page.css">
         <link rel="icon" type="image/x-icon" href="../img/logoMBC.png">
@@ -45,25 +45,32 @@
 
         <div class="content2">
             <div class="imgRow">
-                <div class="imgDiv box"><img src="../../image_gallery/He-162/IMG_7822.jpg" id="img1" onclick="toggleImg('img1')"/></div>
-                <div class="imgDiv box"><img src="../../image_gallery/He-162/IMG_7823.jpg" id="img2" onclick="toggleImg('img2')"/></div>
-                <div class="imgDiv box"><img src="../../image_gallery/He-162/IMG_7831.jpg" id="img3" onclick="toggleImg('img3')"/></div>
-                <div class="imgDiv box"><img src="../../image_gallery/He-162/IMG_7820.jpg" id="img4" onclick="toggleImg('img4')"/></div>
+                <div class="imgDiv box"><img src="../../image_gallery/He-162/IMG_7822.jpg" class="gallery-image" /></div>
+                <div class="imgDiv box"><img src="../../image_gallery/He-162/IMG_7823.jpg" class="gallery-image" /></div>
+                <div class="imgDiv box"><img src="../../image_gallery/He-162/IMG_7831.jpg" class="gallery-image" /></div>
+                <div class="imgDiv box"><img src="../../image_gallery/He-162/IMG_7820.jpg" class="gallery-image" /></div>
             </div>
+
             <div class="imgRow">
-                <div class="imgDiv box"><img src="../../image_gallery/He-162/IMG_7822.jpg" id="img1" onclick="toggleImg('img1')"/></div>
-                <div class="imgDiv box"><img src="../../image_gallery/He-162/IMG_7823.jpg" id="img2" onclick="toggleImg('img2')"/></div>
-                <div class="imgDiv box"><img src="../../image_gallery/He-162/IMG_7831.jpg" id="img3" onclick="toggleImg('img3')"/></div>
-                <div class="imgDiv box"><img src="../../image_gallery/He-162/IMG_7820.jpg" id="img4" onclick="toggleImg('img4')"/></div>
+                <div class="imgDiv box"><img src="../../image_gallery/He-162/IMG_7822.jpg" class="gallery-image" /></div>
+                <div class="imgDiv box"><img src="../../image_gallery/He-162/IMG_7823.jpg" class="gallery-image" /></div>
+                <div class="imgDiv box"><img src="../../image_gallery/He-162/IMG_7831.jpg" class="gallery-image" /></div>
+                <div class="imgDiv box"><img src="../../image_gallery/He-162/IMG_7820.jpg" class="gallery-image" /></div>
             </div>
+
             <div class="imgRow">
-                <div class="imgDiv box"><img src="../../image_gallery/He-162/IMG_7822.jpg" id="img1" onclick="toggleImg('img1')"/></div>
-                <div class="imgDiv box"><img src="../../image_gallery/He-162/IMG_7823.jpg" id="img2" onclick="toggleImg('img2')"/></div>
-                <div class="imgDiv box"><img src="../../image_gallery/He-162/IMG_7831.jpg" id="img3" onclick="toggleImg('img3')"/></div>
-                <div class="imgDiv box"><img src="../../image_gallery/He-162/IMG_7820.jpg" id="img4" onclick="toggleImg('img4')"/></div>
+                <div class="imgDiv box"><img src="../../image_gallery/He-162/IMG_7822.jpg" class="gallery-image" /></div>
+                <div class="imgDiv box"><img src="../../image_gallery/He-162/IMG_7823.jpg" class="gallery-image" /></div>
+                <div class="imgDiv box"><img src="../../image_gallery/He-162/IMG_7831.jpg" class="gallery-image" /></div>
+                <div class="imgDiv box"><img src="../../image_gallery/He-162/IMG_7820.jpg" class="gallery-image" /></div>
             </div>
         </div>
 
+
+        <div id="overlay" onclick="closeImageViewer()"></div>
+        <div id="imageViewer">
+            <img id="imageViewedImg" />
+        </div>
 
 
 
@@ -87,38 +94,5 @@
         </script>
     </body>
 
-    <script>
-        function enlargeImg(imageId) {
-            // Set image size to 1.5 times original
-            img = document.getElementById(imageId);
-            img.style.transform = "scale(2.5)";
-            // Animation effect
-            img.style.transition = "transform 0.25s ease";
-        }
-        function resetImg(imageId) {
-            // Set image size to original
-            img = document.getElementById(imageId);
-            img.style.transform = "scale(1)";
-            img.style.transition = "transform 0.25s ease";
-        }
-
-        clicked = false;
-        lastImg = "";
-        function toggleImg(imageId){
-            if(imageId != lastImg && lastImg != ""){
-                resetImg(lastImg);
-            }
-            if(clicked == false){
-                enlargeImg(imageId);
-                clicked = true;
-                lastImg = imageId;
-            }
-            else{
-                resetImg(imageId);
-                clicked = false;
-                lastImg = "";
-            }
-        }
-        
-    </script>
+    <script src="../script/gallery_page.js">    </script>
 </html>
