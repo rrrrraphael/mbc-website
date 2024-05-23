@@ -175,7 +175,7 @@ if __name__ == '__main__':
     print("Want to optimize images (Y/n)?")
     result = input()
     if result == "Y" or result == "y":
-        optimize_images(imgs_path, 85)
+        optimize_images(imgs_path, 80)
     create_gallery(imgs_path, filepath)
     create_footer(filepath)
 
