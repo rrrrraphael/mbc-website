@@ -34,14 +34,14 @@ def create_header(path:str):
 
                     <div class="topnav" id="myTopnav">
                         <img src="../../img/logoMBC.png" alt="logoMBC" class="logo">
-                        <a href="../index.html" class="hover-underline-animation">Home</a>
+                        <a href="../../index.html" class="hover-underline-animation">Home</a>
                         <a href="../anmeldung.html" class="hover-underline-animation">Anmeldung</a>
                         <div class="dropdown">
                             <button class="dropbtn hover-underline-animation" onclick="window.location.href='../about.html'">Über uns 
                             </button>
                             <div class="dropdown-content">
                                 <a href="../flugzeiten.html">Flugzeiten</a>
-                                <a href="../webcam.html">Webcam</a>
+                                <a href="https://www.mbc-erlauftal.at/joomla/webcam/webcam.jpg">Webcam</a>
                                 <a href="../flugplatzordnung.html">Flugplatzordnung</a>
                                 <a href="../betrieb.html">Betrieb</a>
                                 <a href="../laermessung.html">Lärmmessung</a>
@@ -83,7 +83,9 @@ def create_footer(path:str):
         file.write("""
             <div id="overlay" onclick="closeImageViewer()"></div>
             <div id="imageViewer">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <img id="imageViewedImg" />
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
 
             <footer>
@@ -116,7 +118,7 @@ def create_gallery(img_path:str, path:str):
         for filename in os.listdir(img_path):
             #filepath = os.path.join(img_path, filename).replace("\\", "/")
             #filepath = os.path.relpath(os.path.join(img_path, filename).replace("\\", "/"), path)
-            filepath = "../../../" + os.path.basename(os.path.dirname(img_path)) + "/" + os.path.basename(img_path) + "/" + filename
+            filepath = "../../" + os.path.basename(os.path.dirname(img_path)) + "/" + os.path.basename(img_path) + "/" + filename
             img_paths.append(filepath)
         
         content = """
@@ -175,7 +177,7 @@ if __name__ == '__main__':
     print("Want to optimize images (Y/n)?")
     result = input()
     if result == "Y" or result == "y":
-        optimize_images(imgs_path, 80)
+        optimize_images(imgs_path, 60)
     create_gallery(imgs_path, filepath)
     create_footer(filepath)
 

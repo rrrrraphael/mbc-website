@@ -52,3 +52,12 @@
     letter-spacing: 1px;
 }
 
+@media screen and (max-width: 1200px) {
+    .content2 div{
+        display: flex;
+        flex-direction: column;
+    }
+    .content2 button{
+        padding: 3%;
+    }
+}

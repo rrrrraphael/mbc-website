@@ -43,7 +43,7 @@
     padding-bottom: 4%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
     .content2 .imgRow{
         flex-direction: column;
     }
@@ -68,9 +68,47 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1000;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
 }
 
 #imageViewer img {
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 100%;
+    max-height: 120%;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px; 
+}
+
+
+.prev:hover, .next:hover {
+    background-color: #1c202a;
+}
+
+@media only screen and (max-width: 1200px) {
+    #imageViewer{
+        width: 90%;
+    }
 }

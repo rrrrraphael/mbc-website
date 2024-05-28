@@ -69,3 +69,9 @@
 .content2 td{
     width:50%;
 }
+
+@media screen and (max-width: 1200px) {
+    .content2{
+        flex-direction: column;
+    }
+}

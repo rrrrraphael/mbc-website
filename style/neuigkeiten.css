@@ -51,3 +51,9 @@
     height: 90%;
     padding-top: 1%;
 }
+
+@media screen and (max-width: 1200px) {
+    .content2 p{
+        margin: 10%;
+    }
+}

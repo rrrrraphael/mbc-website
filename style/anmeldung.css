@@ -68,6 +68,31 @@
 .content3 button:hover{
     opacity: 0.85;
 }
+@media screen and (max-width: 1200px) {
+    .content3{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .content3 button{
+        margin: 0;
+        padding: 0;
+        margin-top: 5%;
+        padding: 2%
+    }
+
+    .content1 p{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    
+    .content2 p{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+
 
 .content4{
     display: flex;
@@ -103,13 +128,10 @@
     border-radius: 10px;
 }
 
-.content5 div:hover{
-    background-color:  #cdeafe
-    ;
-}
 
 
-@media screen and (max-width: 790px) {
+
+@media screen and (max-width: 1200px) {
     .content5{
         display: flex;
         flex-direction: column;
@@ -121,6 +143,8 @@
         width: 100%;
         margin: 2%;
     }
+
+    
 
 }
 
